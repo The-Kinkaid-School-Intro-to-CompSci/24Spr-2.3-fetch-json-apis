@@ -197,13 +197,10 @@ function runProgram() {
 
     /** Part 1: Getting local json data  */
     //getting the json data with/without await
-    try{
-        jsonData = fetchJSONData('astros');
-        console.log("JSON data: ", jsonData);
-    }
-    catch(error){
-        console.error("Error fetching JSON data: ", error);
-    }
+
+    jsonData = fetchJSONData('astros');
+    console.log("JSON data: ", jsonData);
+
 
     let fetchJSONDataButton = document.querySelector('#showJSONData');
     fetchJSONDataButton.addEventListener('click', handleShowJSONDataBtn);
